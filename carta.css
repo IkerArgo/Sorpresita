@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 16px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffe5e5;
+}
+
+.carta_san_valentin {
+    position: relative;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: 4s;
+}
+    
+.foto_frontal {
+    width: 450px;
+    margin-right: -50px;
+    margin-left: -50px;
+    margin-top: 100px;
+    position: relative;
+}
+
+.foto_dentro {
+    width: 150px;
+    margin-right: -30px;
+    margin-left: -30px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.carta_san_valentin:hover .carta_frontal {
+    transform: rotateY(200deg);
+}
+
+.carta_san_valentin:hover .texto_frontal {
+    display: none;
+}
+
+.texto_frontal, .texto_dentro {
+    color: #a60657;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 24px;
+}
+
+.carta_frontal {
+    position: relative;
+    overflow: hidden;
+    transform-origin: left;
+    margin: 40px auto;
+    padding: 16px;
+    background-color: whitesmoke;
+    text-align: center;
+    box-shadow: 0 24px 40px -8px #ff1493;
+    width: 450px;
+    height: 800px;
+}
+
+.carta_dentro {
+    position: absolute;
+    overflow: hidden;
+    transform-origin: left;
+    margin: 40px auto;
+    padding: 16px;
+    background-color: whitesmoke;
+    text-align: center;
+    box-shadow: 0 24px 40px -8px #ff1493;
+    width: 450px;
+    height: 800px;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+.carta_san_valentin audio{
+    display: none;
+}
+
+.carta_san_valentin:hover .foto_frontal {
+    display: none;
+}
+
+.carta_dentro audio {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+
+h1 {
+    padding: 25px 10px 10px 25px;
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}

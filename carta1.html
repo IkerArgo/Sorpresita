@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="carta_2.css">
+        <title>Carta</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="envelope-wrapper">
+                <div class="envelope">
+                    <div class="letter">
+                        <div class="text">
+                            <strong>Hola mi amor,</strong>
+                            <p>
+                                Hoy es un dia especial ya que es 14 de febrero, San Valentin.. 
+                                <br>
+                                Siempre soñe con encontrar a una chica tan especial para mi, el amor de mi vida, pero creia que nunca llegaria. Entonces fue cuando te encontre a ti, con la pena de que estabas con otro.. Cuando lo dejasteis, pense que era cuando mas me necesitabas y era el momento de conquistarte, y despues surgio el amor.
+                                Hemos pasado un mal inicio de relación, pero nada nos parará, juntos pasaremos por todo y haremos de esta relacion, la mejor que existe. 
+                                <br>
+                                Espero que te haya gustado la sorpresa y los regalos.
+                                <br>
+                                Feliz San Valentin miamor, Te amo ❤️
+                                <br>
+                                Tu chico ❤️
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="heart">
+                </div>
+            </div>
+        </div>
+        <script>
+            const envelope = document.querySelector('.envelope-wrapper');
+            envelope.addEventListener('click', () => {
+                envelope.classList.toggle('flap');
+            });
+        </script>
+    </body>
+</html>
